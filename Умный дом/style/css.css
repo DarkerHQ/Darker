@@ -21,12 +21,8 @@ a:visited {
 	color: #757882;
 }
 
-
 .page {
-	width: 100%;
-	box-sizing: border-box;
 	margin: 0 auto;
-	overflow: show;
 }
 
 /*#####################-Header-########################################*/
@@ -270,7 +266,7 @@ a:visited {
 }
 
 .item-box6 {
-	padding: 0;
+	padding: /7rem;
 	margin: 0;
 	background: linear-gradient(#e94822 80%, #fafafa 20%);
 }
@@ -432,9 +428,10 @@ a:visited {
 /*$$$$$$$$$-box10-$$$$$$$*/
 
 .item-box10 {
-	padding: 0;
+	padding: .7rem;
 	margin: 0;
-	background: linear-gradient(#e94822 15%, #fafafa 85%); 
+	background: linear-gradient(#e94822 15%, #fafafa 85%);
+
 }
 
 .box10 {
@@ -460,26 +457,26 @@ a:visited {
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	width: 70vw;
-	justify-content: space-around;
+	
 }
 
 .footer-logo-ziro {
-	flex: left;
+	flex: right;
 }
 
 .footer-said-bar {
+	margin-bottom: .4rem;
 	padding: 0 .3rem;
 	font-weight: 600;
-	font-size: calc( (100vw - 41rem)/(120 - 41) * (1.5 - 1) + 1rem);
+	font-size: calc( (100vw - 41rem)/(120 - 41) * (1.5 - 1) + .9rem);
 }
 
 .footer__item-logo {
 	font-weight: 600;
 	flex-grow: 2;
+	font-size: calc( (100vw - 41rem)/(120 - 41) * (1.5 - 1) + .9rem);
 }
-
 
 /*media-Qwery*/
 
@@ -492,6 +489,13 @@ a:visited {
 
 	.footer {
 		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	.footer-logo {
+		width: 100%;
 	}
 }
 
@@ -699,18 +703,3 @@ a:visited {
 	}
 }
 
-
-@media screen and (max-width: 205px) {
-
-	.box {
-		padding: 0rem;
-		margin: 0;
-		width: 100%;
-	}
-
-	.main__item-news {
-		padding: .2rem;
-		margin: 0;
-		width: 100%;
-	}
-}
